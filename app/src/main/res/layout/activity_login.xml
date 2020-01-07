@@ -73,17 +73,23 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnsignin"
+        android:id="@+id/angry_btn"
+
         android:layout_width="320dp"
         android:layout_height="45dp"
+
         android:layout_marginStart="45dp"
-        android:layout_marginTop="475dp"
+        android:layout_marginTop="474dp"
         android:layout_marginEnd="46dp"
-        android:layout_marginBottom="211dp"
-        android:background="#bf271f"
+        android:layout_marginBottom="212dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A82E16"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="0"
         android:text="Entrar"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
+        android:textColor="#FF0D0D"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
