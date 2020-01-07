@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradiente"
-    tools:context=".login"
-    >
+    tools:context=".login">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -162,8 +161,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnface"
+    <ImageButton
+        android:id="@+id/imageButton2"
         android:layout_width="150dp"
         android:layout_height="45dp"
         android:layout_marginStart="45dp"
@@ -171,14 +170,14 @@
         android:layout_marginEnd="216dp"
         android:layout_marginBottom="105dp"
         android:background="#661C0D"
-        android:drawableBottom="@drawable/face"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/facebookpt" />
 
-    <Button
-        android:id="@+id/btngoogle"
+    <ImageButton
+        android:id="@+id/imageButton4"
         android:layout_width="150dp"
         android:layout_height="45dp"
         android:layout_marginStart="215dp"
@@ -186,10 +185,10 @@
         android:layout_marginEnd="46dp"
         android:layout_marginBottom="105dp"
         android:background="#661C0D"
-        android:drawableBottom="@drawable/google1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/google" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
