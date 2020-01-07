@@ -11,9 +11,15 @@
         android:id="@+id/imageView2"
         android:layout_width="319dp"
         android:layout_height="193dp"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="72dp" />
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="466dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -33,96 +39,150 @@
         android:id="@+id/txtemail"
         android:layout_width="320dp"
         android:layout_height="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="301dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="385dp"
         android:drawableLeft="@drawable/email"
         android:ems="10"
         android:hint=" E-mail"
         android:inputType="textEmailAddress"
         android:textColor="#00FFFFFF"
         android:textColorHint="#FFFFFF"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="301dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtpass"
         android:layout_width="320dp"
         android:layout_height="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="366dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="320dp"
         android:drawableLeft="@drawable/password"
         android:ems="10"
         android:hint=" Senha"
         android:inputType="textPassword"
         android:textColorHint="#FFFFFF"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="366dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnsignin"
         android:layout_width="320dp"
         android:layout_height="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="475dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="211dp"
         android:background="#bf271f"
         android:text="Entrar"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="475dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnesqueceu"
         android:layout_width="215dp"
         android:layout_height="33dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="425dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="273dp"
         android:background="#00BF271F"
         android:text="Esqueceu a sua senha?"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="425dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="534dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="173dp"
         android:text="Ou acesse com:"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="534dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="651dp"
+        android:layout_marginEnd="217dp"
+        android:layout_marginBottom="56dp"
         android:text="Não é cadastrado?"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="651dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btncadastro"
         android:layout_width="137dp"
         android:layout_height="27dp"
+        android:layout_marginStart="195dp"
+        android:layout_marginTop="651dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="53dp"
         android:background="#02FFFFFF"
         android:text="Cadastre-se"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="651dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnface"
         android:layout_width="150dp"
         android:layout_height="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="581dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="105dp"
         android:background="#bf271f"
         android:drawableBottom="@drawable/face"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="581dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btngoogle"
         android:layout_width="150dp"
         android:layout_height="45dp"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="581dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="105dp"
         android:background="#bf271f"
         android:drawableBottom="@drawable/google1"
-        tools:layout_editor_absoluteX="215dp"
-        tools:layout_editor_absoluteY="581dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
