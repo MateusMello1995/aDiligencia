@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f53d3d"
-    tools:context=".login">
+    android:background="@drawable/gradiente"
+    tools:context=".login"
+    >
 
     <ImageView
         android:id="@+id/imageView2"
@@ -77,18 +78,18 @@
 
         android:layout_width="320dp"
         android:layout_height="45dp"
-
         android:layout_marginStart="45dp"
-        android:layout_marginTop="474dp"
+
+        android:layout_marginTop="478dp"
         android:layout_marginEnd="46dp"
-        android:layout_marginBottom="212dp"
-        android:background="@drawable/buttonshape"
-        android:shadowColor="#A82E16"
+        android:layout_marginBottom="208dp"
+        android:background="@drawable/buttonshape2"
+        android:shadowColor="#661C0D"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="0"
         android:text="Entrar"
-        android:textColor="#FF0D0D"
+        android:textColor="#FCFFFD"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -169,7 +170,7 @@
         android:layout_marginTop="581dp"
         android:layout_marginEnd="216dp"
         android:layout_marginBottom="105dp"
-        android:background="#bf271f"
+        android:background="#661C0D"
         android:drawableBottom="@drawable/face"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -184,7 +185,7 @@
         android:layout_marginTop="581dp"
         android:layout_marginEnd="46dp"
         android:layout_marginBottom="105dp"
-        android:background="#bf271f"
+        android:background="#661C0D"
         android:drawableBottom="@drawable/google1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
