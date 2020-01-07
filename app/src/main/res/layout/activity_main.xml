@@ -41,8 +41,12 @@
 
         android:layout_width="318dp"
         android:layout_height="60dp"
-        android:background="@drawable/buttonshape"
+        android:layout_marginStart="45dp"
 
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/buttonshape"
         android:shadowColor="#A82E16"
         android:shadowDx="0"
         android:shadowDy="0"
@@ -50,8 +54,10 @@
         android:text="Experimente!"
         android:textColor="#FF0D0D"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="580dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
