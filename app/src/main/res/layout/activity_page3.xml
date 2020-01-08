@@ -10,23 +10,34 @@
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#FA8072"
+        android:background="#B22222"
         android:minHeight="60dp"
-        app:titleTextColor="@android:color/white">
+        app:titleTextColor="@android:color/white"
+        tools:layout_editor_absoluteX="-27dp">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
+            android:background="@android:color/transparent"
             android:drawableStart="@android:drawable/ic_menu_sort_by_size"
             android:minHeight="40dp"
-            android:background="@android:color/transparent"
-            android:text=" "/>
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/txttitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="A Diligência"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:textStyle="bold" />
 
 
 
 
+    </androidx.appcompat.widget.Toolbar>
 
-</androidx.appcompat.widget.Toolbar>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
