@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/my_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/vermelhoClaro"
+    android:minHeight="60dp"
+    app:titleTextColor="@android:color/white"
+    tools:layout_editor_absoluteX="-27dp">
+
+
+<TextView
+    android:id="@+id/txttitulo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="A Diligência"
+    android:textColor="#ffffff"
+    android:textSize="24dp"
+    android:textStyle="bold" />
+
+<Button
+    android:id="@+id/angry_btn"
+
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_gravity="right"
+    android:background="@drawable/buttonshape"
+    android:shadowColor="#A8A8A8"
+    android:shadowDx="0"
+    android:shadowDy="0"
+    android:shadowRadius="5"
+    android:text="1"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp" />
+
+
+</androidx.appcompat.widget.Toolbar>
+</LinearLayout>
