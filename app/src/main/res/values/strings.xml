@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Diligencia</string>
+    <string name="app_name">A Diligência</string>
     <string name="txtLipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras commodo sem non metus tristique, eu imperdiet elit dapibus. Curabitur ac ligula id felis dignissim consectetur.</string>
     <string name="btnExperimente">Experimente!</string>
     <string name="campoEmail"> E-mail</string>
