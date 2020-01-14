@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
- <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.diligencia">
 
     <application
@@ -9,21 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".page3"></activity>
+        <activity
+            android:name=".page4_drawer"
+            android:label="@string/title_activity_page4_drawer"
+            android:theme="@style/NoActionBar"></activity>
+        <activity android:name=".page3" />
         <activity android:name=".login" />
-        <activity android:name=".MainActivity"/>
-
-
+        <activity android:name=".MainActivity" />
         <activity android:name=".telaSplash">
             <intent-filter>
-
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
         </activity>
+    </application>
 
-        </application>
-
- </manifest>
+</manifest>
