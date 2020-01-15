@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".cadastro"></activity>
         <activity
             android:name=".page4_drawer"
             android:label="@string/title_activity_page4_drawer"
-            android:theme="@style/NoActionBar"></activity>
+            android:theme="@style/NoActionBar" />
         <activity android:name=".page3" />
         <activity android:name=".login" />
         <activity android:name=".MainActivity" />

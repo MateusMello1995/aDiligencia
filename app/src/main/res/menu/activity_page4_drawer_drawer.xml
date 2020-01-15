@@ -8,10 +8,12 @@
     <group android:checkableBehavior="single">
         <item
             android:title="Menu"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="@color/branco"/>
         <item
             android:id="@+id/nav_home"
-            android:title="              Home" />
+            android:title="              Home"
+            android:textColor="@color/branco"/>
         <item
             android:id="@+id/nav_gallery"
             android:title="              Buscar Diligências" />

@@ -17,6 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start|left"
+        android:background="@color/vermelhoEscuro"
         app:headerLayout="@layout/nav_header_page4_drawer"
         app:menu="@menu/activity_page4_drawer_drawer" />
 
