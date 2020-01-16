@@ -18,6 +18,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start|left"
         android:background="@color/vermelhoEscuro"
+        app:itemTextColor="@color/branco"
+        app:itemBackground="@color/vermelhoClaro"
         app:headerLayout="@layout/nav_header_page4_drawer"
         app:menu="@menu/activity_page4_drawer_drawer" />
 

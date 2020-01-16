@@ -46,12 +46,20 @@ public class cadastro extends AppCompatActivity {
                         String resultado = "As senhas não conferem!";
                         Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
                     }
+
+
                 }
 
 
 
 
             }
+
+
         });
+
+
     }
+
+
 }
