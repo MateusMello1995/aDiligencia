@@ -13,7 +13,7 @@ public class BancoController {
         banco = new criaBanco(context);
     }
 
-    public String insereDado(String nome, String email, String senha, String senhaconf){
+    public String insereDado(String nome, String email, String senha){
         ContentValues valores;
         long resultado;
 
@@ -22,7 +22,6 @@ public class BancoController {
         valores.put(criaBanco.NOME, nome);
         valores.put(criaBanco.EMAIL, email);
         valores.put(criaBanco.SENHA, senha);
-        valores.put(criaBanco.SENHACONF, senhaconf);
 
         resultado = db.insert(criaBanco.TABELA, null, valores);
         db.close();
@@ -30,7 +29,7 @@ public class BancoController {
         if (resultado ==-1) {
             return "Erro ao inserir registro";
         }else {
-            return "Registro inserido com sucesso”;
+            return "Registro inserido com sucesso";
         }
 
     }

@@ -19,7 +19,7 @@ public class cadastro extends AppCompatActivity {
         botao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //BancoController Crud = new BancoController(getBaseContext());
+                BancoController crud = new BancoController(getBaseContext());
                 EditText nome = (EditText)findViewById(R.id.nome);
                 EditText email = (EditText)findViewById(R.id.email);
                 EditText senha = (EditText)findViewById(R.id.senha);
@@ -39,7 +39,10 @@ public class cadastro extends AppCompatActivity {
 
                     if (senhaString.equals(senhaConfString)){
 
-                        String resultado = "Cadastro realizado com sucesso!";
+                        //String resultado = "Cadastro realizado com sucesso!";
+
+
+                        String resultado = crud.insereDado(nomeString,emailString,senhaString);
                         Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
                     }else {
 

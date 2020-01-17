@@ -14,7 +14,7 @@ public class telaSplash extends AppCompatActivity implements Runnable {
         setContentView(R.layout.tela_splash);
 
         Handler handler = new Handler();
-        handler.postDelayed(this, 4000);
+        handler.postDelayed(this, 2000);
 
     }
 
