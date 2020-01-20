@@ -2,6 +2,7 @@ package com.example.diligencia;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,7 @@ public class cadastro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
         Button botao = (Button) findViewById(R.id.btn_cadastrar);
+       final Intent intent = new Intent(this, login.class);
 
         botao.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,10 +42,11 @@ public class cadastro extends AppCompatActivity {
                     if (senhaString.equals(senhaConfString)){
 
                         //String resultado = "Cadastro realizado com sucesso!";
-
-
                         String resultado = crud.insereDado(nomeString,emailString,senhaString);
                         Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
+
+                        startActivity(intent);
+
                     }else {
 
                         String resultado = "As senhas não conferem!";
