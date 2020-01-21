@@ -11,6 +11,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 public class page3 extends AppCompatActivity {
+
     private DrawerLayout drawer;
 
     @Override

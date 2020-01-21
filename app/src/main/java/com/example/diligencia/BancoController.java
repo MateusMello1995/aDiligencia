@@ -16,10 +16,12 @@ public class BancoController {
     private criaBanco banco;
 
     public BancoController(Context context){
+
         banco = new criaBanco(context);
     }
 
     public String insereDado(String nome, String email, String senha){
+
         ContentValues valores;
         long resultado;
 
@@ -33,22 +35,30 @@ public class BancoController {
         db.close();
 
         if (resultado ==-1) {
+
             return "Erro ao inserir registro";
+
         }else {
+
             return "Registro inserido com sucesso";
         }
 
     }
 
     public Cursor fazerLogin(String email, String senha){
+
         db = banco.getWritableDatabase();
         String sql = "SELECT * FROM "+TABELA+" WHERE "+EMAIL+" = ? AND "+SENHA+" = ?";
         String[] selectionArgs = new String[]{ email, senha };
         Cursor cursor = db.rawQuery(sql,selectionArgs);
+
         if(cursor != null) {
+
             cursor.moveToFirst();
             return cursor;
+
         }else{
+
             return null;
         }
     }

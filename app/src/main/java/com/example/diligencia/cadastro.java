@@ -13,15 +13,18 @@ public class cadastro extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
         Button botao = (Button) findViewById(R.id.btn_cadastrar);
+
         //voltar para a tela login
        final Intent intent = new Intent(this, login.class);
 
         botao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 BancoController crud = new BancoController(getBaseContext());
 
                 //pegar os dados da tela
@@ -50,7 +53,6 @@ public class cadastro extends AppCompatActivity {
                         //String resultado = "Cadastro realizado com sucesso!";
                         String resultado = crud.insereDado(nomeString,emailString,senhaString);
                         Toast.makeText(getApplicationContext(), resultado, Toast.LENGTH_LONG).show();
-
                         startActivity(intent);
 
                     }else {

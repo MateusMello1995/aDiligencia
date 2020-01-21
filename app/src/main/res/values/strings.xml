@@ -3,8 +3,8 @@
     <string name="txtLipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras commodo sem non metus tristique,
                              eu imperdiet elit dapibus. Curabitur ac ligula id felis dignissim consectetur.</string>
     <string name="btnExperimente">Experimente!</string>
-    <string name="campoEmail"> E-mail</string>
-    <string name="campoSenha"> Senha</string>
+    <string name="campoEmail">  E-mail</string>
+    <string name="campoSenha">  Senha</string>
     <string name="btnEntrar">Entrar</string>
     <string name="btnEsqueceu">Esqueceu a sua senha?</string>
     <string name="txtAcesse">Ou acesse com:</string>

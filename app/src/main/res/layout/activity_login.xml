@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradiente"
+    android:orientation="vertical"
     tools:context=".login">
 
     <ImageView
@@ -12,9 +13,9 @@
         android:layout_width="319dp"
         android:layout_height="193dp"
         android:layout_marginStart="46dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="69dp"
         android:layout_marginEnd="46dp"
-        android:layout_marginBottom="490dp"
+        android:layout_marginBottom="469dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,10 +76,8 @@
 
     <Button
         android:id="@+id/angry_btn"
-
         android:layout_width="320dp"
         android:layout_height="45dp"
-
         android:layout_marginStart="46dp"
         android:layout_marginTop="432dp"
         android:layout_marginEnd="45dp"

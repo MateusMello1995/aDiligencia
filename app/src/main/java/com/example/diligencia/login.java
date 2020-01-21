@@ -13,11 +13,13 @@ public class login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
     }
 
     public void login(View view) {
+
         EditText email = findViewById(R.id.txtemail);
         EditText senha = findViewById(R.id.txtpass);
         String strEmail = email.getText().toString();
@@ -25,27 +27,37 @@ public class login extends AppCompatActivity {
         boolean erro = false;
 
         if(strEmail.length() > 0 && strSenha.length() > 0){
+
             BancoController crud = new BancoController(getBaseContext());
             Cursor cursor = crud.fazerLogin(strEmail,strSenha);
+
             if(cursor == null || cursor.getCount() == 0){
+
                 erro = true;
+
             }else {
+
                 String resEmail = cursor.getString(cursor.getColumnIndex("email"));
                 String resSenha = cursor.getString(cursor.getColumnIndex("senha"));
 
                 if (strEmail.equals(resEmail) && strSenha.equals(resSenha)) {
+
                     Toast.makeText(getApplicationContext(), "Seja bem-vindo.", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(this, page3.class);
                     startActivity(intent);
+
                 } else {
+
                     erro = true;
                 }
             }
         }else{
+
             erro = true;
         }
 
         if(erro)
+
             Toast.makeText(getApplicationContext(), "E-mail ou senha inválidos!", Toast.LENGTH_LONG).show();
     }
 
