@@ -85,7 +85,7 @@
         android:layout_marginBottom="254dp"
         android:background="@drawable/buttonshape2"
         android:drawableLeft="@drawable/enter"
-        android:onClick="proximaTela"
+        android:onClick="login"
         android:shadowColor="#661C0D"
         android:shadowDx="0"
         android:shadowDy="0"

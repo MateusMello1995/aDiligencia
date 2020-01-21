@@ -2,7 +2,13 @@ package com.example.diligencia;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+
+
+import static com.example.diligencia.criaBanco.EMAIL;
+import static com.example.diligencia.criaBanco.SENHA;
+import static com.example.diligencia.criaBanco.TABELA;
 
 public class BancoController {
 
@@ -20,10 +26,10 @@ public class BancoController {
         db = banco.getWritableDatabase();
         valores = new ContentValues();
         valores.put(criaBanco.NOME, nome);
-        valores.put(criaBanco.EMAIL, email);
-        valores.put(criaBanco.SENHA, senha);
+        valores.put(EMAIL, email);
+        valores.put(SENHA, senha);
 
-        resultado = db.insert(criaBanco.TABELA, null, valores);
+        resultado = db.insert(TABELA, null, valores);
         db.close();
 
         if (resultado ==-1) {
@@ -33,4 +39,18 @@ public class BancoController {
         }
 
     }
+
+    public Cursor fazerLogin(String email, String senha){
+        db = banco.getWritableDatabase();
+        String sql = "SELECT * FROM "+TABELA+" WHERE "+EMAIL+" = ? AND "+SENHA+" = ?";
+        String[] selectionArgs = new String[]{ email, senha };
+        Cursor cursor = db.rawQuery(sql,selectionArgs);
+        if(cursor != null) {
+            cursor.moveToFirst();
+            return cursor;
+        }else{
+            return null;
+        }
+    }
+
 }
