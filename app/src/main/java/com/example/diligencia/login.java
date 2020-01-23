@@ -66,4 +66,10 @@ public class login extends AppCompatActivity {
         Intent intent = new Intent(this, cadastro.class);
         startActivity(intent);
     }
+
+    public void telaMapa (View view){
+
+        Intent intent = new Intent(this, mapa.class);
+        startActivity(intent);
+    }
 }

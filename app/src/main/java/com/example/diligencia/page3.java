@@ -35,8 +35,12 @@ public class page3 extends AppCompatActivity {
 
         Intent intent = new Intent(this, page4_drawer.class);
         startActivity(intent);
+    }
 
+    public void telaMapa(View view){
 
+        Intent intent = new Intent(this, mapa.class);
+        startActivity(intent);
     }
 
 

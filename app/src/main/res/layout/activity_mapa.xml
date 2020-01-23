@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".page3"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".mapa"
+    tools:showIn="@layout/activity_mapa"
     android:id="@+id/drawer_layout"
-    android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
     <include layout="@layout/mytoolbar" />
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_host_fragment" />
 
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="60dp">
+    </fragment>
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation"
@@ -22,19 +38,8 @@
         app:itemTextColor="@color/branco"
         app:itemBackground="@color/vermelhoClaro"
         app:headerLayout="@layout/nav_header_page4_drawer"
-        app:menu="@menu/activity_page4_drawer_drawer" >
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="550dp"
-            android:layout_marginLeft="30dp"
-            android:onClick="telaMapa"
-            android:text="Button" />
-    </com.google.android.material.navigation.NavigationView>
-
-
-
+        app:menu="@menu/activity_page4_drawer_drawer" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
+
+

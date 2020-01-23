@@ -1,5 +1,6 @@
 package com.example.diligencia.ui.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.diligencia.R;
+import com.example.diligencia.mapa;
 
 public class HomeFragment extends Fragment {
 
@@ -32,4 +34,6 @@ public class HomeFragment extends Fragment {
         });
         return root;
     }
+
+
 }
