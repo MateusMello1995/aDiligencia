@@ -37,7 +37,6 @@ public class mapa extends AppCompatActivity implements OnMapReadyCallback {
 
             Manifest.permission.ACCESS_FINE_LOCATION
     };
-
     private static final int INITIAL_REQUEST=1337;
     private static final int LOCATION_REQUEST=INITIAL_REQUEST+3;
 
@@ -120,10 +119,6 @@ public class mapa extends AppCompatActivity implements OnMapReadyCallback {
         //setar botão de localização no mapa
         mMap.getUiSettings().setMyLocationButtonEnabled(true);
         mMap.getUiSettings().setMyLocationButtonEnabled(true);
-
-
-
-
 
 
 

@@ -72,4 +72,10 @@ public class login extends AppCompatActivity {
         Intent intent = new Intent(this, mapa.class);
         startActivity(intent);
     }
+
+    public void mapaEx (View view) {
+
+        Intent intent = new Intent(this, MapaEx.class);
+        startActivity(intent);
+    }
 }
