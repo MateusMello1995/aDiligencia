@@ -48,19 +48,19 @@ public class MapaEx extends FragmentActivity implements OnMapReadyCallback {
 
         // marcadores para as cidades
         LatLng caxias = new LatLng(-29.156865, -51.176011);
-        mMap.addMarker(new MarkerOptions().position(caxias).title("Caxias do Sul"));
+        mMap.addMarker(new MarkerOptions().position(caxias).title("Caxias do Sul").icon(BitmapDescriptorFactory.fromResource(R.drawable.uva)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(caxias));
 
         LatLng gramado = new LatLng(-29.332853, -50.878446);
-        mMap.addMarker(new MarkerOptions().position(gramado).title("Gramado"));
+        mMap.addMarker(new MarkerOptions().position(gramado).title("Gramado").icon(BitmapDescriptorFactory.fromResource(R.drawable.chocolate)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(gramado));
 
         LatLng porto = new LatLng(-30.034658, -51.219049);
-        mMap.addMarker(new MarkerOptions().position(porto).title("Porto Alegre"));
+        mMap.addMarker(new MarkerOptions().position(porto).title("Porto Alegre").icon(BitmapDescriptorFactory.fromResource(R.drawable.town)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(porto));
 
         LatLng torres = new LatLng(-29.332143, -49.728341);
-        mMap.addMarker(new MarkerOptions().position(torres).title("Torres"));
+        mMap.addMarker(new MarkerOptions().position(torres).title("Torres").icon(BitmapDescriptorFactory.fromResource(R.drawable.beach)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(torres));
 
         LatLng marcador = new LatLng(-29.652906, -50.565089);
