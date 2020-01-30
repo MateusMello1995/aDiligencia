@@ -78,4 +78,10 @@ public class login extends AppCompatActivity {
         Intent intent = new Intent(this, MapaEx.class);
         startActivity(intent);
     }
+
+    public void telaCep (View view){
+
+        Intent intent = new Intent(this, consulta_cep.class);
+        startActivity(intent);
+    }
 }

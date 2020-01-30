@@ -6,21 +6,20 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.FragmentActivity;
+
 
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.widget.Toast;
 
-import com.google.android.gms.maps.CameraUpdate;
+
+
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
@@ -32,6 +31,7 @@ public class mapa extends AppCompatActivity implements OnMapReadyCallback {
     private DrawerLayout drawer;
     private GoogleMap mMap;
 
+
     //declara variaveis para permissão location
     private static final String[] LOCATION_PERMS={
 
@@ -39,7 +39,6 @@ public class mapa extends AppCompatActivity implements OnMapReadyCallback {
     };
     private static final int INITIAL_REQUEST=1337;
     private static final int LOCATION_REQUEST=INITIAL_REQUEST+3;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,9 +72,7 @@ public class mapa extends AppCompatActivity implements OnMapReadyCallback {
         }
     }
 
-
-
-    @Override
+     @Override
     public void onMapReady(GoogleMap googleMap) {
 
         mMap = googleMap;
@@ -91,6 +88,7 @@ public class mapa extends AppCompatActivity implements OnMapReadyCallback {
 
         //setar o zoom no mapa
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(casa, 12.0f));
+
         //mostra controles de zoom
         mMap.getUiSettings().setZoomControlsEnabled(true);
 
